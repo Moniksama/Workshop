@@ -15,11 +15,6 @@ def readBD():
     cursor.execute("SELECT * from post_it")
     return cursor.fetchall()
 
-
-
-###################################################################
-############################## Flask ##############################
-###################################################################
 @app.route("/")
 def postit():
     return render_template('postit.html')
@@ -33,7 +28,7 @@ def listar_notas():
 
 if __name__ == "__main__":
     app.config['MYSQL_DATABASE_USER'] = 'root'
-    app.config['MYSQL_DATABASE_PASSWORD'] = 'afa'
+    app.config['MYSQL_DATABASE_PASSWORD'] = 'root'
     app.config['MYSQL_DATABASE_DB'] = 'postit'
     app.config['MYSQL_DATABASE_Host'] = 'localhost'
 
