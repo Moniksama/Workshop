@@ -1,6 +1,4 @@
---
--- Table structure for table `marca`
---
+
 DROP TABLE IF EXISTS `marca`;
 CREATE TABLE `marca` (
   `idmarca` int NOT NULL AUTO_INCREMENT,
@@ -15,9 +13,7 @@ INSERT INTO `marca` VALUES (1,'Completado'),(4,'En curso'),(2,'Importante'),(3,'
 UNLOCK TABLES;
 
 
---
--- Table structure for table `post_it`
---
+
 DROP TABLE IF EXISTS `post_it`;
 CREATE TABLE `post_it` (
   `idpost_it` int NOT NULL AUTO_INCREMENT,
