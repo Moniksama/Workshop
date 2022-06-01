@@ -1,4 +1,6 @@
+CREATE DATABASE postit;
 
+use postit;
 DROP TABLE IF EXISTS `marca`;
 CREATE TABLE `marca` (
   `idmarca` int NOT NULL AUTO_INCREMENT,
@@ -11,7 +13,6 @@ CREATE TABLE `marca` (
 LOCK TABLES `marca` WRITE;
 INSERT INTO `marca` VALUES (1,'Completado'),(4,'En curso'),(2,'Importante'),(3,'Pendiente');
 UNLOCK TABLES;
-
 
 
 DROP TABLE IF EXISTS `post_it`;
